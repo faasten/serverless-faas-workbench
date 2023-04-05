@@ -1,0 +1,10 @@
+#!/bin/sh
+
+CID=$(docker build -q .)
+cidfile=$(mktemp --dry-run)
+docker run --cidfile="$cidfile" -w /app -v "$(realpath $1)":/src "$CID" sh -c 'cp /src/* .; make'
+tmpdir=$(mktemp -d)
+docker export `cat $cidfile` | tar -C "$tmpdir" -x app/out --strip-components 2
+
+gensquashfs --pack-dir "$tmpdir" "$2"
+rm -Rf "$cidfile" "$tmpdir"
