@@ -1,6 +1,7 @@
 import tempfile
 from time import time
-import cv2                                                                                                                                                                                                                                                                                                                            
+import cv2
+import shutil
 
 tmp = "/tmp/"
 FILE_NAME_INDEX = 0
@@ -44,22 +45,35 @@ def main(event):
     input_file = event['input_file']
     metadata = event['metadata']
 
+    download_path = tmp + "file.mp4"
     start = time()
-    #s3_client.download_file(input_bucket, object_key, download_path)
+    with sc.fs_openblob(input_file) as input_blob:
+        with open(download_path, "wb+") as local_fp:
+            shutil.copyfileobj(input_blob, local_fp)
     download_latency = time() - start
     latencies["download_data"] = download_latency
 
     with tempfile.NamedTemporaryFile(suffix=".avi") as result_file:
-        video_processing_latency, upload_path = video_processing(result_file.name, input_file)
+        video_processing_latency, upload_path = video_processing(result_file.name, download_path)
         latencies["function_execution"] = video_processing_latency
 
         start = time()
         #syscall.write_file(output_file, result_file)
+        with sc.create_blob() as newblob:
+            with open(upload_path, "rb") as local_fp:
+                shutil.copyfileobj(local_fp, newblob)
+            bn = newblob.finalize(b'')
+            sc.fs_linkblob(output_file, bn)
         upload_latency = time() - start
         latencies["upload_data"] = upload_latency
         timestamps["finishing_time"] = time()
 
         return {"latencies": latencies, "timestamps": timestamps, "metadata": metadata}
+
+def handle(args, syscall):
+    global sc
+    sc = syscall
+    return main(args)
 
 if __name__ == "__main__":
     print(main({'output_file': 'output.avi', 'input_file': '../../../dataset/video/SampleVideo_1280x720_10mb.mp4', 'metadata': 1}))
