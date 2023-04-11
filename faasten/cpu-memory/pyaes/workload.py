@@ -42,4 +42,4 @@ def handle(args, syscall):
     return main(args)
 
 if __name__ == "__main__":
-    print(main({'lenbth_of_message': 100, 'num_of_iterations': 100, 'metadata': 1}))
+    print(main({'length_of_message': 100, 'num_of_iterations': 100, 'metadata': 1}))
