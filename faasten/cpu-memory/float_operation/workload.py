@@ -21,10 +21,7 @@ def main(event):
     latency = float_operations(n)
     latencies["function_execution"] = latency
     timestamps["finishing_time"] = time()
-    ret = sc.fs_createfile(":~:test", (123).to_bytes(4, 'big'))
-    ret = sc.fs_write(":~:test", (123).to_bytes(4, 'big'))
-    files = sc.fs_list(":~").names
-    return {"ret": ret, "file": list(files), "latencies": latencies, "timestamps": timestamps, "metadata": metadata}
+    return {"latencies": latencies, "timestamps": timestamps, "metadata": metadata}
 
 def handle(args, syscall):
     global sc
