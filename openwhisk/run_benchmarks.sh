@@ -3,6 +3,7 @@
 # TODO
 # setup files for image/video funtions
 
+
 jsons=($(ls jsons))
 for json in "${jsons[@]}"; do
     filename=$(basename -- "$json")
