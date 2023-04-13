@@ -5,3 +5,8 @@ actions=($(ls $ACTIONDIR))
 for action in "${actions[@]}"; do
     wsk action create $action $ACTIONDIR/$action/function.py --docker yuetan/py3:$action -i
 done
+
+
+#for action in "${actions[@]}"; do
+#    wsk action delete $action -i
+#done

@@ -32,9 +32,9 @@ spec:
     - mountPath: /data
       name: localvolume # Corresponds to the `spec.volumes` Persistent Volume
   nodeSelector:
-    kubernetes.io/hostname: ow2.openwhisk.praxis-pg0.wisc.cloudlab.us # Specify a node label associated to the Worker Node on which you want to deploy the pod.
+    kubernetes.io/hostname: ow2.owbench.praxis-pg0.wisc.cloudlab.us # Specify a node label associated to the Worker Node on which you want to deploy the pod.
   volumes:
   - name: localvolume
     hostPath: # MinIO generally recommends using locally-attached volumes
-      path: /home/yuetan/minio # Specify a path to a local drive or volume on the Kubernetes worker node
+      path: /mnt/minio # Specify a path to a local drive or volume on the Kubernetes worker node
       type: DirectoryOrCreate # The path to the last directory must exist

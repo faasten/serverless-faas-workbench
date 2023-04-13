@@ -1,1 +1,1 @@
-{"endpoint_url":"http://10.11.107.12:9000", "object_key":"SampleVideo_1280x720_10mb.mp4", "input_bucket":"test", "output_bucket":"test-out", "aws_access_key_id":"minioadmin", "aws_secret_access_key":"minioadmin", "metadata":"123"}
+{"endpoint_url":"", "object_key":"image.jpg", "input_bucket":"test", "output_bucket":"test-out", "aws_access_key_id":"minioadmin", "aws_secret_access_key":"minioadmin", "metadata":"123"}
