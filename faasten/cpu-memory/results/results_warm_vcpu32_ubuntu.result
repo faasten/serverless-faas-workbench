@@ -1,0 +1,212 @@
+[
+  {
+    "latencies": {
+      "function_execution": 0.1061861515045166
+    },
+    "timestamps": {
+      "starting_time": 1681409133.3990078,
+      "finishing_time": 1681409133.5051994
+    },
+    "metadata": 1,
+    "duration": 106287741
+  },
+  {
+    "latencies": {
+      "function_execution": 0.09147906303405762
+    },
+    "timestamps": {
+      "starting_time": 1681409133.5235336,
+      "finishing_time": 1681409133.615016
+    },
+    "metadata": 1,
+    "duration": 91535194
+  },
+  {
+    "latencies": {
+      "function_execution": 0.00021338462829589844
+    },
+    "timestamps": {
+      "starting_time": 1681409136.1858625,
+      "finishing_time": 1681409136.186089
+    },
+    "metadata": 123,
+    "duration": 288463
+  },
+  {
+    "latencies": {
+      "function_execution": 0.00019025802612304688
+    },
+    "timestamps": {
+      "starting_time": 1681409136.2018816,
+      "finishing_time": 1681409136.2020786
+    },
+    "metadata": 123,
+    "duration": 241287
+  },
+  {
+    "latencies": {
+      "function_execution": 4.048059940338135,
+      "upload_data": 0.43522047996520996
+    },
+    "timestamps": {
+      "starting_time": 1681409138.95247,
+      "finishing_time": 1681409143.443948
+    },
+    "metadata": 123,
+    "duration": 4491847122
+  },
+  {
+    "latencies": {
+      "function_execution": 3.72003173828125,
+      "upload_data": 0.7661032676696777
+    },
+    "timestamps": {
+      "starting_time": 1681409143.464646,
+      "finishing_time": 1681409147.9542122
+    },
+    "metadata": 123,
+    "duration": 4490112522
+  },
+  {
+    "latencies": {
+      "function_execution": 0.08289098739624023
+    },
+    "timestamps": {
+      "starting_time": 1681409152.639578,
+      "finishing_time": 1681409152.723996
+    },
+    "metadata": 123,
+    "duration": 84486351
+  },
+  {
+    "latencies": {
+      "function_execution": 0.00135040283203125
+    },
+    "timestamps": {
+      "starting_time": 1681409152.7420719,
+      "finishing_time": 1681409152.7441347
+    },
+    "metadata": 123,
+    "duration": 2093721
+  },
+  {
+    "latencies": {
+      "function_execution": 0.007658720016479492
+    },
+    "timestamps": {
+      "starting_time": 1681409157.561158,
+      "finishing_time": 1681409157.5700374
+    },
+    "metadata": 123,
+    "duration": 8944644
+  },
+  {
+    "latencies": {
+      "function_execution": 0.008658409118652344
+    },
+    "timestamps": {
+      "starting_time": 1681409157.58482,
+      "finishing_time": 1681409157.5948224
+    },
+    "metadata": 123,
+    "duration": 10068357
+  },
+  {
+    "latencies": {
+      "function_execution": 92.48601150512695,
+      "upload_data": 1.381319522857666
+    },
+    "timestamps": {
+      "starting_time": 1681409165.5540278,
+      "finishing_time": 1681409260.7103603
+    },
+    "metadata": 123,
+    "duration": 95156450164
+  },
+  {
+    "latencies": {
+      "function_execution": 91.42772769927979,
+      "upload_data": 1.439239263534546
+    },
+    "timestamps": {
+      "starting_time": 1681409260.731102,
+      "finishing_time": 1681409354.04597
+    },
+    "metadata": 123,
+    "duration": 93314982107
+  },
+  {
+    "latencies": {
+      "download_data": 1.7222850322723389,
+      "function_execution": 66.5838406085968,
+      "upload_data": 0.017569303512573242
+    },
+    "timestamps": {
+      "starting_time": 1681409363.2355776,
+      "finishing_time": 1681409431.5619407
+    },
+    "metadata": 123,
+    "duration": 68469745953
+  },
+  {
+    "latencies": {
+      "download_data": 1.655036449432373,
+      "function_execution": 66.57649898529053,
+      "upload_data": 0.014932870864868164
+    },
+    "timestamps": {
+      "starting_time": 1681409431.7152748,
+      "finishing_time": 1681409499.9645991
+    },
+    "metadata": 123,
+    "duration": 68401786651
+  },
+  {
+    "latencies": {
+      "function_execution": 0.18500995635986328
+    },
+    "timestamps": {
+      "starting_time": 1681409502.7991943,
+      "finishing_time": 1681409502.9844477
+    },
+    "metadata": 1,
+    "duration": 185312670
+  },
+  {
+    "latencies": {
+      "function_execution": 0.18423175811767578
+    },
+    "timestamps": {
+      "starting_time": 1681409503.0029025,
+      "finishing_time": 1681409503.1872983
+    },
+    "metadata": 1,
+    "duration": 184423766
+  },
+  {
+    "latencies": {
+      "download_data": 0.20845508575439453,
+      "function_execution": 33.676056146621704,
+      "upload_data": 1.160154104232788
+    },
+    "timestamps": {
+      "starting_time": 1681409508.3522146,
+      "finishing_time": 1681409543.758845
+    },
+    "metadata": 123,
+    "duration": 35411863229
+  },
+  {
+    "latencies": {
+      "download_data": 0.25731992721557617,
+      "function_execution": 33.78907489776611,
+      "upload_data": 1.2751200199127197
+    },
+    "timestamps": {
+      "starting_time": 1681409543.783385,
+      "finishing_time": 1681409579.167771
+    },
+    "metadata": 123,
+    "duration": 35389491914
+  }
+]
