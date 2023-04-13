@@ -1,0 +1,23 @@
+Apr 13 01:47:03.189 INFO connect to tikv endpoint: "128.105.144.17:20160"
+false
+Apr 13 01:47:03.228 INFO connect to tikv endpoint: "128.105.144.17:20160"
+false
+Apr 13 01:47:03.332 INFO connect to tikv endpoint: "128.105.144.17:20160"
+false
+Apr 13 01:47:03.364 INFO connect to tikv endpoint: "128.105.144.17:20160"
+false
+Apr 13 01:47:04.183 INFO connect to tikv endpoint: "128.105.144.17:20160"
+false
+{"latencies": {"function_execution": 0.3958444595336914}, "timestamps": {"starting_time": 1681350426.8258798, "finishing_time": 1681350427.2217274}, "metadata": 1, "duration": 395921167}
+{"latencies": {"function_execution": 0.0002143383026123047}, "timestamps": {"starting_time": 1681350428.3854837, "finishing_time": 1681350428.3857036}, "metadata": 123, "duration": 256000}
+Apr 13 01:47:10.163 INFO connect to tikv endpoint: "128.105.144.17:20160"
+{"latencies": {"function_execution": 8.908368825912476, "upload_data": 0.2881925106048584}, "timestamps": {"starting_time": 1681350430.1611564, "finishing_time": 1681350439.3635244}, "metadata": 123, "duration": 9202532103}
+{"latencies": {"function_execution": 0.08030843734741211}, "timestamps": {"starting_time": 1681350446.883313, "finishing_time": 1681350446.9646447}, "metadata": 123, "duration": 81376910}
+{"latencies": {"function_execution": 0.0031642913818359375}, "timestamps": {"starting_time": 1681350454.473929, "finishing_time": 1681350454.4780376}, "metadata": 123, "duration": 4145584}
+Apr 13 01:47:44.282 INFO connect to tikv endpoint: "128.105.144.17:20160"
+{"latencies": {"function_execution": 484.82736372947693, "upload_data": 0.6477878093719482}, "timestamps": {"starting_time": 1681350464.2762604, "finishing_time": 1681350951.4256866}, "metadata": 123, "duration": 487149476453}
+Apr 13 01:56:02.025 INFO connect to tikv endpoint: "128.105.144.17:20160"
+{"latencies": {"download_data": 2.1402549743652344, "function_execution": 127.68078422546387, "upload_data": 0.014722585678100586}, "timestamps": {"starting_time": 1681350962.0220952, "finishing_time": 1681351091.8609788}, "metadata": 123, "duration": 129959851556}
+{"latencies": {"function_execution": 0.9369239807128906}, "timestamps": {"starting_time": 1681351093.2648308, "finishing_time": 1681351094.2020762}, "metadata": 1, "duration": 937285520}
+Apr 13 01:58:20.392 INFO connect to tikv endpoint: "128.105.144.17:20160"
+{"latencies": {"download_data": 0.2494950294494629, "function_execution": 55.47796607017517, "upload_data": 0.5858848094940186}, "timestamps": {"starting_time": 1681351100.3858483, "finishing_time": 1681351156.7914042}, "metadata": 123, "duration": 56407688389}
