@@ -1,0 +1,100 @@
+[
+  {
+    "latencies": {
+      "function_execution": 0.07723283767700195
+    },
+    "metadata": 1,
+    "timestamps": {
+      "finishing_time": 1681345056.3999832,
+      "starting_time": 1681345056.3227482
+    }
+  },
+  {
+    "latencies": {
+      "function_execution": 6.103515625e-05
+    },
+    "metadata": 123,
+    "timestamps": {
+      "finishing_time": 1681345058.8782582,
+      "starting_time": 1681345058.8781946
+    }
+  },
+  {
+    "latencies": {
+      "download_data": 0.06425070762634277,
+      "function_execution": 4.697030067443848,
+      "upload_data": 0.5540227890014648
+    },
+    "metadata": "123",
+    "timestamps": {
+      "finishing_time": 1681345066.918202,
+      "starting_time": 1681345061.4917514
+    }
+  },
+  {
+    "latencies": {
+      "function_execution": 0.0006892681121826172
+    },
+    "metadata": 123,
+    "timestamps": {
+      "finishing_time": 1681345069.476347,
+      "starting_time": 1681345069.4753313
+    }
+  },
+  {
+    "latencies": {
+      "function_execution": 0.008872747421264648
+    },
+    "metadata": 123,
+    "timestamps": {
+      "finishing_time": 1681345071.8960679,
+      "starting_time": 1681345071.8860495
+    }
+  },
+  {
+    "latencies": {
+      "download_data": 0.1944577693939209,
+      "function_execution": 68.40860152244568,
+      "upload_data": 0.34259033203125
+    },
+    "metadata": "123",
+    "timestamps": {
+      "finishing_time": 1681345143.5926917,
+      "starting_time": 1681345074.4486916
+    }
+  },
+  {
+    "latencies": {
+      "download_data": 0.020405292510986328,
+      "function_execution": 65.98750972747803,
+      "upload_data": 0.04485177993774414
+    },
+    "metadata": "123",
+    "timestamps": {
+      "finishing_time": 1681345214.7012224,
+      "starting_time": 1681345146.3962653
+    }
+  },
+  {
+    "latencies": {
+      "function_execution": 0.1318373680114746
+    },
+    "metadata": 1,
+    "timestamps": {
+      "finishing_time": 1681345217.195916,
+      "starting_time": 1681345217.0639136
+    }
+  },
+  {
+    "latencies": {
+      "download_data": 0.14400768280029297,
+      "function_execution": 41.25890898704529,
+      "upload_data": 0.3254358768463135
+    },
+    "metadata": "123",
+    "timestamps": {
+      "finishing_time": 1681345261.7059238,
+      "starting_time": 1681345219.814296
+    }
+  }
+]
