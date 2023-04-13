@@ -17,6 +17,8 @@ mode = sys.argv[2] if len(sys.argv) >= 3 else ''
 
 i = 0
 with open(file) as f:
+    if mode != 'warm':
+        assert len(f.readlines()) == len(names)
     lines = [l for i, l in enumerate(f.readlines()) if mode != 'warm' or i % 2 == 1]
     for l in lines:
         try:
