@@ -16,7 +16,6 @@ file = sys.argv[1]
 
 RUNS = 21
 
-i = 0
 with open(file) as f:
     lines = f.readlines()
     assert len(lines) / len(names) == RUNS
