@@ -13,19 +13,32 @@ names = [
 ]
 
 file = sys.argv[1]
-mode = sys.argv[2] if len(sys.argv) >= 3 else ''
+
+RUNS = 21
 
 i = 0
 with open(file) as f:
-    if mode != 'warm':
-        assert len(f.readlines()) == len(names)
-    lines = [l for i, l in enumerate(f.readlines()) if mode != 'warm' or i % 2 == 1]
-    for l in lines:
-        try:
-            obj = json.loads(l)
-            ts = obj["timestamps"]
-            print(names[i], float(ts["finishing_time"]) - float(ts["starting_time"]))
-            i += 1
-        except:
-            pass
+    lines = f.readlines()
+    assert len(lines) / len(names) == RUNS
+
+    grouped = [
+        lines[i:i+RUNS] if RUNS == 1 else lines[i:i+RUNS][1:]
+        for i in range(0, len(lines), RUNS)
+    ]
+
+    grouped_times = [
+        [
+            float(json.loads(l)["timestamps"]["finishing_time"]) - float(json.loads(l)["timestamps"]["starting_time"])
+            for l in ls
+        ]
+        for ls in grouped
+    ]
+
+    avgs = [
+        sum(times) / len(times)
+        for times in grouped_times
+    ]
+
+    for n, t in zip(names, avgs):
+        print(n, t)
 
