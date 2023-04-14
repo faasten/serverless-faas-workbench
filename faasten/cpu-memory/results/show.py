@@ -1,4 +1,4 @@
-import json, sys
+import json, sys, numpy
 
 names = [
     "chameleon",
@@ -38,6 +38,8 @@ with open(file) as f:
         for times in grouped_times
     ]
 
-    for n, t in zip(names, avgs):
-        print(n, t)
+    for n, ts in zip(names, grouped_times):
+        avg = sum(ts) / len(ts)
+        std = numpy.std(ts)
+        print(n, avg, std)
 
