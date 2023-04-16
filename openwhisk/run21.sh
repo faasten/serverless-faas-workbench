@@ -18,13 +18,16 @@ mc cp $BENCHDATA/video/SampleVideo_1280x720_10mb.mp4 minio-test/test 1>&2
 mc cp $BENCHDATA/model/haarcascade_frontalface_default.xml minio-test/test 1>&2
 mc cp $BENCHDATA/amzn_fine_food_reviews/reviews100mb.csv minio-test/test 1>&2
 
-jsons=($(ls jsons))
-for json in "${jsons[@]}"; do
-    filename=$(basename -- "$json")
-    action="${filename%.*}"
-    tmp=mktemp
-    jq '.endpoint_url="'$MINIO'"' jsons/$filename > $tmp
-    echo $action 1>&2
-    wsk action invoke $action --param-file $tmp -i -r
-    rm $tmp
+jsons=(chameleon.json float_operation.json image_processing.json linpack.json matmul.json pyaes.json video_processing.json)
+
+for (( i=0; i<21; i=i+1 )); do
+    for json in "${jsons[@]}"; do
+        filename=$(basename -- "$json")
+        action="${filename%.*}"
+        tmp=mktemp
+        jq '.endpoint_url="'$MINIO'"' jsons/$filename > $tmp
+        echo $action 1>&2
+            wsk action invoke $action --param-file $tmp -i -r
+        rm $tmp
+    done
 done
