@@ -5,10 +5,10 @@ if [ $# -ne 2 ]; then
     exit 1
 fi
 
-MINIO=$1
-BENCHDATA=$2
+MINIO=$1     # E.g., http://10.11.107.12:9000
+BENCHDATA=$2 # Bench data directory
 # set alias & access key
-mc admin alias set minio-test $MINIO minioadmin minioadmin 1>&2
+mc alias set minio-test $MINIO minioadmin minioadmin 1>&2
 # setup buckets
 mc mb minio-test/test 1>&2
 mc mb minio-test/test-out 1>&2
@@ -24,10 +24,7 @@ for (( i=0; i<21; i=i+1 )); do
     for json in "${jsons[@]}"; do
         filename=$(basename -- "$json")
         action="${filename%.*}"
-        tmp=mktemp
-        jq '.endpoint_url="'$MINIO'"' jsons/$filename > $tmp
         echo $action 1>&2
-            wsk action invoke $action --param-file $tmp -i -r
-        rm $tmp
+        wsk action invoke $action --param-file <(jq '.endpoint_url="'$MINIO'"' jsons/$filename) -i -r
     done
 done

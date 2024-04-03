@@ -22,9 +22,6 @@ jsons=($(ls jsons))
 for json in "${jsons[@]}"; do
     filename=$(basename -- "$json")
     action="${filename%.*}"
-    tmp=mktemp
-    jq '.endpoint_url="'$MINIO'"' jsons/$filename > $tmp
     echo $action 1>&2
-    wsk action invoke $action --param-file $tmp -i -r
-    rm $tmp
+    wsk action invoke $action --param-file <(jq '.endpoint_url="'$MINIO'"' jsons/$filename) -i -r
 done
