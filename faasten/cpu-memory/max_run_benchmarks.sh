@@ -42,8 +42,8 @@ singlevm $SINGLEVM_PARAM \
          --kernel $KERNEL \
          --rootfs $PYTHON \
          --appfs $WORKBENCH_IMGS/chameleon.img \
-         --mem_size $MEM_SIZE \
-         --vcpu_count $VCPU_COUNT < \
+         --memory $MEM_SIZE \
+         --vcpus $VCPU_COUNT < \
          <(yes '{"num_of_rows": 100, "num_of_cols": 100, "metadata": 1}' | head -n $RUNS)
 
 # float_operation
@@ -52,8 +52,8 @@ singlevm $SINGLEVM_PARAM \
          --kernel $KERNEL \
          --rootfs $PYTHON \
          --appfs $WORKBENCH_IMGS/float_operation.img \
-         --mem_size $MEM_SIZE \
-         --vcpu_count $VCPU_COUNT < \
+         --memory $MEM_SIZE \
+         --vcpus $VCPU_COUNT < \
          <(yes '{"n": "123", "metadata": 123}\n{"n": "123", "metadata": 123}' | head -n $RUNS)
 
 # image_processing
@@ -62,8 +62,8 @@ singlevm $SINGLEVM_PARAM \
          --kernel $KERNEL \
          --rootfs $PYTHON \
          --appfs $WORKBENCH_IMGS/image_processing.img \
-         --mem_size $MEM_SIZE \
-         --vcpu_count $VCPU_COUNT < \
+         --memory $MEM_SIZE \
+         --vcpus $VCPU_COUNT < \
          <(yes '{"input": ":home:<faasten,faasten>:image.jpg", "output_dir": ":home:<faasten,faasten>:output", "metadata": 123}' | head -n $RUNS)
 
 # linpack
@@ -72,8 +72,8 @@ singlevm $SINGLEVM_PARAM \
          --kernel $KERNEL \
          --rootfs $PYTHON \
          --appfs $WORKBENCH_IMGS/linpack.img \
-         --mem_size $MEM_SIZE \
-         --vcpu_count $VCPU_COUNT < \
+         --memory $MEM_SIZE \
+         --vcpus $VCPU_COUNT < \
          <(yes '{"n": "123", "metadata": 123}' | head -n $RUNS)
 
 # matmul
@@ -82,8 +82,8 @@ singlevm $SINGLEVM_PARAM \
          --kernel $KERNEL \
          --rootfs $PYTHON \
          --appfs $WORKBENCH_IMGS/matmul.img \
-         --mem_size $MEM_SIZE \
-         --vcpu_count $VCPU_COUNT < \
+         --memory $MEM_SIZE \
+         --vcpus $VCPU_COUNT < \
          <(yes '{"n": "123", "metadata": 123}' | head -n $RUNS)
 
 # ml_video_face_detection
@@ -92,8 +92,8 @@ singlevm $SINGLEVM_PARAM \
          --kernel $KERNEL \
          --rootfs $PYTHON \
          --appfs $WORKBENCH_IMGS/ml_video_face_detection.img \
-         --mem_size $MEM_SIZE \
-         --vcpu_count $VCPU_COUNT < \
+         --memory $MEM_SIZE \
+         --vcpus $VCPU_COUNT < \
          <(yes '{"input": ":home:<faasten,faasten>:video.mp4", "output_dir": ":home:<faasten,faasten>:output", "model": ":home:<faasten,faasten>:haar_model.xml", "metadata": 123}' | head -n $RUNS)
 
 # model_training
@@ -102,8 +102,8 @@ singlevm $SINGLEVM_PARAM \
          --kernel $KERNEL \
          --rootfs $PYTHON \
          --appfs $WORKBENCH_IMGS/model_training.img \
-         --mem_size $MEM_SIZE \
-         --vcpu_count $VCPU_COUNT < \
+         --memory $MEM_SIZE \
+         --vcpus $VCPU_COUNT < \
          <(yes '{"dataset": ":home:<faasten,faasten>:reviews100mb.csv", "output": ":home:<faasten,faasten>:output:lr_model.pk", "metadata": 123}' | head -n $RUNS)
 
 # pyaes
@@ -112,8 +112,8 @@ singlevm $SINGLEVM_PARAM \
          --kernel $KERNEL \
          --rootfs $PYTHON \
          --appfs $WORKBENCH_IMGS/pyaes.img \
-         --mem_size $MEM_SIZE \
-         --vcpu_count $VCPU_COUNT < \
+         --memory $MEM_SIZE \
+         --vcpus $VCPU_COUNT < \
          <(yes '{"length_of_message": 100, "num_of_iterations": 100, "metadata": 1}' | head -n $RUNS)
 
 # video_processing
@@ -122,6 +122,6 @@ singlevm $SINGLEVM_PARAM \
          --kernel $KERNEL \
          --rootfs $PYTHON \
          --appfs $WORKBENCH_IMGS/video_processing.img \
-         --mem_size $MEM_SIZE \
-         --vcpu_count $VCPU_COUNT < \
+         --memory $MEM_SIZE \
+         --vcpus $VCPU_COUNT < \
          <(yes '{"input_file": ":home:<faasten,faasten>:video.mp4", "output_file": ":home:<faasten,faasten>:output:video_processing.avi", "metadata": 123}' | head -n $RUNS)
