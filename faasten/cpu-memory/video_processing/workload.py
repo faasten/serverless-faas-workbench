@@ -2,10 +2,17 @@ import tempfile
 from time import time
 import cv2
 import shutil
+import json
+import re
+
+from syscalls import ResponseDict
 
 tmp = "/tmp/"
 FILE_NAME_INDEX = 0
 FILE_PATH_INDEX = 2
+
+def path(path: str):
+    return list(filter(None, re.split(':<|>:|:', path)))
 
 def video_processing(result_file_path, video_path):
     video = cv2.VideoCapture(video_path)
@@ -39,7 +46,7 @@ def video_processing(result_file_path, video_path):
 def main(event):
     latencies = {}
     timestamps = {}
-    
+
     timestamps["starting_time"] = time()
     output_file = event['output_file']
     input_file = event['input_file']
@@ -47,9 +54,11 @@ def main(event):
 
     download_path = tmp + "file.mp4"
     start = time()
-    with sc.fs_openblob(input_file) as input_blob:
-        with open(download_path, "wb+") as local_fp:
-            shutil.copyfileobj(input_blob, local_fp)
+
+    with sc.root().open_at(path(input_file)) as input_blob:
+        with input_blob.get() as input_blob:
+            with open(download_path, "wb+") as local_fp:
+                shutil.copyfileobj(input_blob, local_fp)
     download_latency = time() - start
     latencies["download_data"] = download_latency
 
@@ -63,17 +72,20 @@ def main(event):
             with open(upload_path, "rb") as local_fp:
                 shutil.copyfileobj(local_fp, newblob)
             bn = newblob.finalize(b'')
-            sc.fs_linkblob(output_file, bn)
+
+            output_path = path(output_file)
+            with sc.root().open_at(output_path[:-1]) as out_dir:
+                out_dir.link(newblob, output_path[-1])
         upload_latency = time() - start
         latencies["upload_data"] = upload_latency
         timestamps["finishing_time"] = time()
 
-        return {"latencies": latencies, "timestamps": timestamps, "metadata": metadata}
+        return ResponseDict({"latencies": latencies, "timestamps": timestamps, "metadata": metadata})
 
-def handle(args, syscall):
+def handle(syscall, payload, **kwarg):
     global sc
     sc = syscall
-    return main(args)
+    return main(json.loads(payload))
 
 if __name__ == "__main__":
     print(main({'output_file': 'output.avi', 'input_file': '../../../dataset/video/SampleVideo_1280x720_10mb.mp4', 'metadata': 1}))

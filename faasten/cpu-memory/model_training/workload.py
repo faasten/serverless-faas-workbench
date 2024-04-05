@@ -7,23 +7,27 @@ from time import time
 import re
 import io
 import shutil
+import json
+
+from syscalls import ResponseDict
 
 cleanup_re = re.compile('[^a-z]+')
 tmp = '/tmp/'
 
+def path(path: str):
+    return list(filter(None, re.split(':<|>:|:', path)))
 
 def cleanup(sentence):
     sentence = sentence.lower()
     sentence = cleanup_re.sub(' ', sentence).strip()
     return sentence
 
-
 def main(event):
     latencies = {}
     timestamps = {}
-    
+
     timestamps["starting_time"] = time()
-    
+
     dataset_object_key = event['dataset'] #object_key
     output_path = event['output']  # example : lr_model.pk
     metadata = event['metadata']
@@ -31,9 +35,10 @@ def main(event):
     local_dataset_path = "/tmp/dataset.csv"
 
     start = time()
-    with sc.fs_openblob(dataset_object_key) as input_blob:
-        with open(local_dataset_path, "wb+") as local_fp:
-            shutil.copyfileobj(input_blob, local_fp)
+    with sc.root().open_at(file(dataset_object_key)) as input_blob:
+        with input_blob.get() as input_blob:
+            with open(local_dataset_path, "wb+") as local_fp:
+                shutil.copyfileobj(input_blob, local_fp)
 
     download_data = time() - start
     latencies["download_data"] = download_data
@@ -59,14 +64,16 @@ def main(event):
         with open(model_file_path, "rb") as local_fp:
             shutil.copyfileobj(local_fp, newblob)
         bn = newblob.finalize(b'')
-        sc.fs_linkblob(output_path, bn)
+        output_path = path(output_path)
+        with sc.root().open_at(output_path[:-1]) as out_dir:
+            out_dir.link(newblob, output_path[-1])
     upload_data = time() - start
     latencies["upload_data"] = upload_data
     timestamps["finishing_time"] = time()
 
-    return {"latencies": latencies, "timestamps": timestamps, "metadata": metadata}
+    return ResponseDict({"latencies": latencies, "timestamps": timestamps, "metadata": metadata})
 
-def handle(event, syscall):
+def handle(syscall, payload, **kwarg):
     global sc
     sc = syscall
-    return main(event)
+    return main(json.loads(payload))

@@ -1,6 +1,8 @@
 import numpy as np
 from time import time
+import json
 
+from syscalls import ResponseDict
 
 def matmul(n):
     A = np.random.rand(n, n)
@@ -15,7 +17,7 @@ def matmul(n):
 def main(event):
     latencies = {}
     timestamps = {}
-    
+
     timestamps["starting_time"] = time()
     n = int(event['n'])
     metadata = event['metadata']
@@ -23,10 +25,10 @@ def main(event):
     latencies["function_execution"] = result
     timestamps["finishing_time"] = time()
 
-    return {"latencies": latencies, "timestamps": timestamps, "metadata": metadata}
+    return ResponseDict({"latencies": latencies, "timestamps": timestamps, "metadata": metadata})
 
-def handle(args, syscall):
-    return main(args)
+def handle(syscall, payload, **kwarg):
+    return main(json.loads(payload))
 
 if __name__ == "__main__":
     print(main({'n': 100, 'metadata': 1}))

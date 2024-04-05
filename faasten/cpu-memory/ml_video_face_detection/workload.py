@@ -1,11 +1,16 @@
 from time import time
 import cv2
 import shutil
+import json, re
+
+from syscalls import ResponseDict
 
 tmp = "/tmp/"
 FILE_NAME_INDEX = 0
 FILE_PATH_INDEX = 2
 
+def path(path: str):
+    return list(filter(None, re.split(':<|>:|:', path)))
 
 def video_processing(object_key, video_path, model_path):
     file_name = object_key.split(".")[FILE_NAME_INDEX]
@@ -48,9 +53,9 @@ def video_processing(object_key, video_path, model_path):
 def main(event):
     latencies = {}
     timestamps = {}
-    
+
     timestamps["starting_time"] = time()
-    
+
     download_path = event['input']
     output_dir = event['output_dir']
     model_path = event['model'] # example : haarcascade_frontalface_default.xml
@@ -60,12 +65,14 @@ def main(event):
     local_input_path = "/tmp/input.mp4"
     local_model_path = "/tmp/input.xml"
 
-    with sc.fs_openblob(download_path) as input_blob:
-        with open(local_input_path, "wb+") as local_fp:
-            shutil.copyfileobj(input_blob, local_fp)
-    with sc.fs_openblob(model_path) as model_blob:
-        with open(local_model_path, "wb+") as local_fp:
-            shutil.copyfileobj(model_blob, local_fp)
+    with sc.root().open_at(path(download_path)) as input_blob:
+        with input_blob.get() as input_blob:
+            with open(local_input_path, "wb+") as local_fp:
+                shutil.copyfileobj(input_blob, local_fp)
+    with sc.root().open_at(path(model_path)) as model_blob:
+        with model_blob.get() as model_blob:
+            with open(local_model_path, "wb+") as local_fp:
+                shutil.copyfileobj(model_blob, local_fp)
 
     function_execution, upload_path = video_processing("output.foo", local_input_path, local_model_path)
     latencies["function_execution"] = function_execution
@@ -75,8 +82,9 @@ def main(event):
         with open(upload_path, "rb") as local_fp:
             shutil.copyfileobj(local_fp, newblob)
         bn = newblob.finalize(b'')
-        output_path = ":".join([output_dir, upload_path.split("/")[-1]])
-        sc.fs_linkblob(output_path, bn)
+        name = upload_path.split("/")[-1]
+        with sc.root().open_at(path(output_dir)) as out_dir:
+            output_dir.link(newblob, name)
 
     upload_data = time() - start
     latencies["upload_data"] = upload_data
@@ -84,7 +92,7 @@ def main(event):
 
     return {"latencies": latencies, "timestamps": timestamps, "metadata": metadata}
 
-def handle(args, syscall):
+def handle(syscall, payload, **kwarg):
     global sc
     sc = syscall
-    return main(args)
+    return main(json.loads(payload))

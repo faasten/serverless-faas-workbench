@@ -1,5 +1,8 @@
 from numpy import matrix, linalg, random
 from time import time
+import json
+
+from syscalls import ResponseDict
 
 
 def linpack(n):
@@ -27,7 +30,7 @@ def linpack(n):
 def main(event):
     latencies = {}
     timestamps = {}
-    
+
     timestamps["starting_time"] = time()
     n = int(event['n'])
     metadata = event['metadata']
@@ -35,10 +38,10 @@ def main(event):
     latencies["function_execution"] = latency
     timestamps["finishing_time"] = time()
 
-    return {"latencies": latencies, "timestamps": timestamps, "metadata": metadata}
+    return ResponseDict({"latencies": latencies, "timestamps": timestamps, "metadata": metadata})
 
-def handle(args, syscall):
-    return main(args)
+def handle(syscall, payload, **kwarg):
+    return main(json.loads(payload))
 
 if __name__ == "__main__":
     print(main({'n': 100, 'metadata': 1}))

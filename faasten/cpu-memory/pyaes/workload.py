@@ -2,17 +2,18 @@ from time import time
 import random
 import string
 import pyaes
+import json
 
+from syscalls import ResponseDict
 
 def generate(length):
     letters = string.ascii_lowercase + string.digits
     return ''.join(random.choice(letters) for i in range(length))
 
-
 def main(event):
     latencies = {}
     timestamps = {}
-    
+
     timestamps["starting_time"] = time()
     length_of_message = event['length_of_message']
     num_of_iterations = event['num_of_iterations']
@@ -36,10 +37,10 @@ def main(event):
     latencies["function_execution"] = latency
     timestamps["finishing_time"] = time()
 
-    return {"latencies": latencies, "timestamps": timestamps, "metadata": metadata}
+    return ResponseDict({"latencies": latencies, "timestamps": timestamps, "metadata": metadata})
 
-def handle(args, syscall):
-    return main(args)
+def handle(syscall, payload, **kwarg):
+    return main(json.loads(payload))
 
 if __name__ == "__main__":
     print(main({'length_of_message': 100, 'num_of_iterations': 100, 'metadata': 1}))
