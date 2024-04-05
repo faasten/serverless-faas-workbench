@@ -84,13 +84,13 @@ def main(event):
         bn = newblob.finalize(b'')
         name = upload_path.split("/")[-1]
         with sc.root().open_at(path(output_dir)) as out_dir:
-            output_dir.link(newblob, name)
+            out_dir.link(newblob, name)
 
     upload_data = time() - start
     latencies["upload_data"] = upload_data
     timestamps["finishing_time"] = time()
 
-    return {"latencies": latencies, "timestamps": timestamps, "metadata": metadata}
+    return ResponseDict({"latencies": latencies, "timestamps": timestamps, "metadata": metadata})
 
 def handle(syscall, payload, **kwarg):
     global sc
