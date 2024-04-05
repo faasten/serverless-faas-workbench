@@ -54,7 +54,7 @@ singlevm $SINGLEVM_PARAM \
          --appfs $WORKBENCH_IMGS/float_operation.img \
          --memory $MEM_SIZE \
          --vcpu $VCPU_COUNT < \
-         <(yes '{"n": "123", "metadata": 123}\n{"n": "123", "metadata": 123}' | head -n $RUNS)
+         <(yes '{"n": "123", "metadata": 123}' | head -n $RUNS)
 
 # image_processing
 singlevm $SINGLEVM_PARAM \
