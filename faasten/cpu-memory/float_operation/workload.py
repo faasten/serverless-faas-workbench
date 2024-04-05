@@ -16,8 +16,7 @@ def float_operations(n):
     return latency
 
 
-def main(event)
-:
+def main(event):
     latencies = {}
     timestamps = {}
     timestamps["starting_time"] = time()
