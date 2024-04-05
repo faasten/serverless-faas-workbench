@@ -67,7 +67,6 @@ def main(event):
         latencies["function_execution"] = video_processing_latency
 
         start = time()
-        #syscall.write_file(output_file, result_file)
         with sc.create_blob() as newblob:
             with open(upload_path, "rb") as local_fp:
                 shutil.copyfileobj(local_fp, newblob)
