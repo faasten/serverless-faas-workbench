@@ -17,7 +17,7 @@ then
 PYTHON=rootfs/python3.ext4
 fi
 
-SINGLEVM_PARAM="--no-odirect-root --no-odirect-app --no-odirect-diff"
+SINGLEVM_PARAM="--no-odirect-root --no-odirect-app"
 
 MEM_SIZE=2048
 
