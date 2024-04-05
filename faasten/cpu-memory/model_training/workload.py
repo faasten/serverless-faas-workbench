@@ -35,7 +35,7 @@ def main(event):
     local_dataset_path = "/tmp/dataset.csv"
 
     start = time()
-    with sc.root().open_at(file(dataset_object_key)) as input_blob:
+    with sc.root().open_at(path(dataset_object_key)) as input_blob:
         with input_blob.get() as input_blob:
             with open(local_dataset_path, "wb+") as local_fp:
                 shutil.copyfileobj(input_blob, local_fp)
