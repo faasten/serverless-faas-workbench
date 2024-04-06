@@ -2,6 +2,7 @@ from time import time
 import json
 from chameleon import PageTemplate
 
+from syscalls import ResponseDict
 
 BIGTABLE_ZPT = """\
 <table xmlns="http://www.w3.org/1999/xhtml"
@@ -39,10 +40,12 @@ def main(event):
     latencies["function_execution"] = latency
     timestamps["finishing_time"] = time()
 
-    return {"latencies": latencies, "timestamps": timestamps, "metadata": metadata}
+    return ResponseDict({"latencies": latencies, "timestamps": timestamps, "metadata": metadata})
 
-def handle(args, syscall):
-    return main(args)
+def handle(syscall, payload, **kwarg):
+    global sc
+    sc = syscall
+    return main(json.loads(payload))
 
 if __name__ == "__main__":
     print(main({'num_of_rows': 100, 'num_of_cols': 100, 'metadata': 1}))
