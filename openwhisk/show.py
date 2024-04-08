@@ -6,27 +6,18 @@ names = [
     "image_processing",
     "linpack",
     "matmul",
-    #  "ml_video_face_detection",
-    #  "model_training",
+    "ml_video_face_detection",
+    "model_training",
     "pyaes",
     "video_processing",
 ]
 
-
-long_names = [
-    "ml_video_face_detection",
-    "model_training",
-]
-
 file = sys.argv[1]
-long_file = sys.argv[2]
 
 RUNS = 21
 
 def process(file, names):
-
     with open(file) as f:
-
         jsons = json.load(f)
         assert len(jsons) % RUNS == 0
         n = len(jsons) // RUNS
@@ -56,7 +47,6 @@ def process(file, names):
 
 
 process(file, names)
-process(long_file, long_names)
 
 
 
