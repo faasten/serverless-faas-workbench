@@ -1,0 +1,1 @@
+{"endpoint_url":"http://10.11.159.140:9000", "dataset_object_key":"reviews100mb.csv", "dataset_bucket":"test", "model_object_key":"lr_model.pk", "model_bucket":"test-out", "aws_access_key_id":"minioadmin", "aws_secret_access_key":"minioadmin", "metadata":"123"}
