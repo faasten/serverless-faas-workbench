@@ -1,7 +1,7 @@
 FROM openwhisk/actionloop-python-v3.6-ai:1.16.0
 
 COPY main.py .
-COPY cpu-memory/ml_video_face_detection/* .
+COPY cpu-memory/ml_video_face_detection/* ./
 
 RUN pip3 install --upgrade pip &&\
     pip3 install --no-cache-dir -r requirements.txt &&\

@@ -1,7 +1,7 @@
 FROM openwhisk/python3action:95f1358
 
 COPY main.py .
-COPY cpu-memory/matmul/* .
+COPY cpu-memory/matmul/* ./
 
 RUN apk add --update py-pip
 RUN pip install -r requirements.txt
