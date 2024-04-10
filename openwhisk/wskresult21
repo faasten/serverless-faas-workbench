@@ -1,0 +1,1554 @@
+{
+    "latencies": {
+        "function_execution": 0.07760119438171387
+    },
+    "metadata": 1,
+    "timestamps": {
+        "finishing_time": 1681650871.524055,
+        "starting_time": 1681650871.4464517
+    }
+}
+{
+    "latencies": {
+        "function_execution": 0.00006222724914550781
+    },
+    "metadata": 123,
+    "timestamps": {
+        "finishing_time": 1681650873.8838518,
+        "starting_time": 1681650873.883787
+    }
+}
+{
+    "latencies": {
+        "download_data": 0.06897902488708496,
+        "function_execution": 4.669678688049316,
+        "upload_data": 0.5521190166473389
+    },
+    "metadata": "123",
+    "timestamps": {
+        "finishing_time": 1681650881.7897983,
+        "starting_time": 1681650876.410289
+    }
+}
+{
+    "latencies": {
+        "function_execution": 0.0007026195526123047
+    },
+    "metadata": 123,
+    "timestamps": {
+        "finishing_time": 1681650884.2592561,
+        "starting_time": 1681650884.2582107
+    }
+}
+{
+    "latencies": {
+        "function_execution": 0.0026540756225585938
+    },
+    "metadata": 123,
+    "timestamps": {
+        "finishing_time": 1681650886.695828,
+        "starting_time": 1681650886.6928394
+    }
+}
+{
+    "latencies": {
+        "function_execution": 0.1318953037261963
+    },
+    "metadata": 1,
+    "timestamps": {
+        "finishing_time": 1681650889.1621575,
+        "starting_time": 1681650889.0301013
+    }
+}
+{
+    "latencies": {
+        "download_data": 0.15342450141906738,
+        "function_execution": 40.73600244522095,
+        "upload_data": 0.32964658737182617
+    },
+    "metadata": "123",
+    "timestamps": {
+        "finishing_time": 1681650933.597136,
+        "starting_time": 1681650892.2296274
+    }
+}
+{
+    "latencies": {
+        "function_execution": 0.08226418495178223
+    },
+    "metadata": 1,
+    "timestamps": {
+        "finishing_time": 1681650936.2857058,
+        "starting_time": 1681650936.2034383
+    }
+}
+{
+    "latencies": {
+        "function_execution": 0.00006175041198730469
+    },
+    "metadata": 123,
+    "timestamps": {
+        "finishing_time": 1681650938.7092028,
+        "starting_time": 1681650938.7091384
+    }
+}
+{
+    "latencies": {
+        "download_data": 0.0648794174194336,
+        "function_execution": 4.684710502624512,
+        "upload_data": 0.5290317535400391
+    },
+    "metadata": "123",
+    "timestamps": {
+        "finishing_time": 1681650946.6588607,
+        "starting_time": 1681650941.236028
+    }
+}
+{
+    "latencies": {
+        "function_execution": 0.0007140636444091797
+    },
+    "metadata": 123,
+    "timestamps": {
+        "finishing_time": 1681650949.2513866,
+        "starting_time": 1681650949.250332
+    }
+}
+{
+    "latencies": {
+        "function_execution": 0.002737283706665039
+    },
+    "metadata": 123,
+    "timestamps": {
+        "finishing_time": 1681650952.2509034,
+        "starting_time": 1681650952.2478125
+    }
+}
+{
+    "latencies": {
+        "function_execution": 0.14706993103027344
+    },
+    "metadata": 1,
+    "timestamps": {
+        "finishing_time": 1681650954.7584348,
+        "starting_time": 1681650954.6112087
+    }
+}
+{
+    "latencies": {
+        "download_data": 0.14824271202087402,
+        "function_execution": 40.957573890686035,
+        "upload_data": 0.3024461269378662
+    },
+    "metadata": "123",
+    "timestamps": {
+        "finishing_time": 1681650998.7526336,
+        "starting_time": 1681650957.1994383
+    }
+}
+{
+    "latencies": {
+        "function_execution": 0.0901339054107666
+    },
+    "metadata": 1,
+    "timestamps": {
+        "finishing_time": 1681651001.4302099,
+        "starting_time": 1681651001.3400726
+    }
+}
+{
+    "latencies": {
+        "function_execution": 0.0000514984130859375
+    },
+    "metadata": 123,
+    "timestamps": {
+        "finishing_time": 1681651003.861471,
+        "starting_time": 1681651003.8614175
+    }
+}
+{
+    "latencies": {
+        "download_data": 0.06344747543334961,
+        "function_execution": 4.663402318954468,
+        "upload_data": 0.5503618717193604
+    },
+    "metadata": "123",
+    "timestamps": {
+        "finishing_time": 1681651011.6268451,
+        "starting_time": 1681651006.2551613
+    }
+}
+{
+    "latencies": {
+        "function_execution": 0.0007214546203613281
+    },
+    "metadata": 123,
+    "timestamps": {
+        "finishing_time": 1681651014.1390598,
+        "starting_time": 1681651014.1380525
+    }
+}
+{
+    "latencies": {
+        "function_execution": 0.0027456283569335938
+    },
+    "metadata": 123,
+    "timestamps": {
+        "finishing_time": 1681651016.4947183,
+        "starting_time": 1681651016.491602
+    }
+}
+{
+    "latencies": {
+        "function_execution": 0.15149497985839844
+    },
+    "metadata": 1,
+    "timestamps": {
+        "finishing_time": 1681651019.0690384,
+        "starting_time": 1681651018.9173837
+    }
+}
+{
+    "latencies": {
+        "download_data": 0.14861083030700684,
+        "function_execution": 41.40807843208313,
+        "upload_data": 0.30258679389953613
+    },
+    "metadata": "123",
+    "timestamps": {
+        "finishing_time": 1681651063.646872,
+        "starting_time": 1681651021.635509
+    }
+}
+{
+    "latencies": {
+        "function_execution": 0.08111023902893066
+    },
+    "metadata": 1,
+    "timestamps": {
+        "finishing_time": 1681651066.2521544,
+        "starting_time": 1681651066.1710417
+    }
+}
+{
+    "latencies": {
+        "function_execution": 0.0000514984130859375
+    },
+    "metadata": 123,
+    "timestamps": {
+        "finishing_time": 1681651068.5645635,
+        "starting_time": 1681651068.5645099
+    }
+}
+{
+    "latencies": {
+        "download_data": 0.06873178482055664,
+        "function_execution": 4.690265417098999,
+        "upload_data": 0.5420501232147217
+    },
+    "metadata": "123",
+    "timestamps": {
+        "finishing_time": 1681651076.6651678,
+        "starting_time": 1681651071.2247725
+    }
+}
+{
+    "latencies": {
+        "function_execution": 0.0007491111755371094
+    },
+    "metadata": 123,
+    "timestamps": {
+        "finishing_time": 1681651079.1188104,
+        "starting_time": 1681651079.1177194
+    }
+}
+{
+    "latencies": {
+        "function_execution": 0.0025510787963867188
+    },
+    "metadata": 123,
+    "timestamps": {
+        "finishing_time": 1681651081.6335988,
+        "starting_time": 1681651081.6306949
+    }
+}
+{
+    "latencies": {
+        "function_execution": 0.13000702857971191
+    },
+    "metadata": 1,
+    "timestamps": {
+        "finishing_time": 1681651084.1425648,
+        "starting_time": 1681651084.0123935
+    }
+}
+{
+    "latencies": {
+        "download_data": 0.14789819717407227,
+        "function_execution": 41.609471559524536,
+        "upload_data": 0.3538966178894043
+    },
+    "metadata": "123",
+    "timestamps": {
+        "finishing_time": 1681651128.9322863,
+        "starting_time": 1681651086.6759012
+    }
+}
+{
+    "latencies": {
+        "function_execution": 0.07797479629516602
+    },
+    "metadata": 1,
+    "timestamps": {
+        "finishing_time": 1681651131.6875134,
+        "starting_time": 1681651131.6095362
+    }
+}
+{
+    "latencies": {
+        "function_execution": 0.00006532669067382812
+    },
+    "metadata": 123,
+    "timestamps": {
+        "finishing_time": 1681651134.1400123,
+        "starting_time": 1681651134.1399448
+    }
+}
+{
+    "latencies": {
+        "download_data": 0.060805320739746094,
+        "function_execution": 4.647771120071411,
+        "upload_data": 0.5196669101715088
+    },
+    "metadata": "123",
+    "timestamps": {
+        "finishing_time": 1681651141.9565356,
+        "starting_time": 1681651136.64081
+    }
+}
+{
+    "latencies": {
+        "function_execution": 0.0006999969482421875
+    },
+    "metadata": 123,
+    "timestamps": {
+        "finishing_time": 1681651144.4640424,
+        "starting_time": 1681651144.4629655
+    }
+}
+{
+    "latencies": {
+        "function_execution": 0.002721548080444336
+    },
+    "metadata": 123,
+    "timestamps": {
+        "finishing_time": 1681651146.848877,
+        "starting_time": 1681651146.8457794
+    }
+}
+{
+    "latencies": {
+        "function_execution": 0.1455073356628418
+    },
+    "metadata": 1,
+    "timestamps": {
+        "finishing_time": 1681651149.2850926,
+        "starting_time": 1681651149.1391675
+    }
+}
+{
+    "latencies": {
+        "download_data": 0.1460893154144287,
+        "function_execution": 41.180153369903564,
+        "upload_data": 0.3379364013671875
+    },
+    "metadata": "123",
+    "timestamps": {
+        "finishing_time": 1681651193.570011,
+        "starting_time": 1681651151.7625747
+    }
+}
+{
+    "latencies": {
+        "function_execution": 0.08409571647644043
+    },
+    "metadata": 1,
+    "timestamps": {
+        "finishing_time": 1681651196.3427174,
+        "starting_time": 1681651196.258619
+    }
+}
+{
+    "latencies": {
+        "function_execution": 0.00005984306335449219
+    },
+    "metadata": 123,
+    "timestamps": {
+        "finishing_time": 1681651198.711155,
+        "starting_time": 1681651198.7110927
+    }
+}
+{
+    "latencies": {
+        "download_data": 0.09479784965515137,
+        "function_execution": 4.6002514362335205,
+        "upload_data": 0.5152239799499512
+    },
+    "metadata": "123",
+    "timestamps": {
+        "finishing_time": 1681651206.4945831,
+        "starting_time": 1681651201.1988
+    }
+}
+{
+    "latencies": {
+        "function_execution": 0.0007309913635253906
+    },
+    "metadata": 123,
+    "timestamps": {
+        "finishing_time": 1681651209.1100621,
+        "starting_time": 1681651209.1089413
+    }
+}
+{
+    "latencies": {
+        "function_execution": 0.0025887489318847656
+    },
+    "metadata": 123,
+    "timestamps": {
+        "finishing_time": 1681651211.6307144,
+        "starting_time": 1681651211.6277933
+    }
+}
+{
+    "latencies": {
+        "function_execution": 0.1556544303894043
+    },
+    "metadata": 1,
+    "timestamps": {
+        "finishing_time": 1681651214.1548653,
+        "starting_time": 1681651213.9988062
+    }
+}
+{
+    "latencies": {
+        "download_data": 0.15525221824645996,
+        "function_execution": 40.65436792373657,
+        "upload_data": 0.303844690322876
+    },
+    "metadata": "123",
+    "timestamps": {
+        "finishing_time": 1681651258.0053139,
+        "starting_time": 1681651216.7327926
+    }
+}
+{
+    "latencies": {
+        "function_execution": 0.08388257026672363
+    },
+    "metadata": 1,
+    "timestamps": {
+        "finishing_time": 1681651260.694845,
+        "starting_time": 1681651260.6109598
+    }
+}
+{
+    "latencies": {
+        "function_execution": 0.00006222724914550781
+    },
+    "metadata": 123,
+    "timestamps": {
+        "finishing_time": 1681651263.2369742,
+        "starting_time": 1681651263.23691
+    }
+}
+{
+    "latencies": {
+        "download_data": 0.06122541427612305,
+        "function_execution": 4.572010517120361,
+        "upload_data": 0.5196590423583984
+    },
+    "metadata": "123",
+    "timestamps": {
+        "finishing_time": 1681651271.0413654,
+        "starting_time": 1681651265.800558
+    }
+}
+{
+    "latencies": {
+        "function_execution": 0.0009701251983642578
+    },
+    "metadata": 123,
+    "timestamps": {
+        "finishing_time": 1681651273.5881624,
+        "starting_time": 1681651273.5866308
+    }
+}
+{
+    "latencies": {
+        "function_execution": 0.002656698226928711
+    },
+    "metadata": 123,
+    "timestamps": {
+        "finishing_time": 1681651276.0166197,
+        "starting_time": 1681651276.0136065
+    }
+}
+{
+    "latencies": {
+        "function_execution": 0.16504621505737305
+    },
+    "metadata": 1,
+    "timestamps": {
+        "finishing_time": 1681651278.5743365,
+        "starting_time": 1681651278.4088376
+    }
+}
+{
+    "latencies": {
+        "download_data": 0.17691588401794434,
+        "function_execution": 40.55326533317566,
+        "upload_data": 0.30905985832214355
+    },
+    "metadata": "123",
+    "timestamps": {
+        "finishing_time": 1681651322.3410113,
+        "starting_time": 1681651281.1566274
+    }
+}
+{
+    "latencies": {
+        "function_execution": 0.09824419021606445
+    },
+    "metadata": 1,
+    "timestamps": {
+        "finishing_time": 1681651325.1088192,
+        "starting_time": 1681651325.0105705
+    }
+}
+{
+    "latencies": {
+        "function_execution": 0.00020051002502441406
+    },
+    "metadata": 123,
+    "timestamps": {
+        "finishing_time": 1681651327.3881035,
+        "starting_time": 1681651327.387896
+    }
+}
+{
+    "latencies": {
+        "download_data": 0.06643176078796387,
+        "function_execution": 4.639535188674927,
+        "upload_data": 0.550605058670044
+    },
+    "metadata": "123",
+    "timestamps": {
+        "finishing_time": 1681651335.2470567,
+        "starting_time": 1681651329.8927076
+    }
+}
+{
+    "latencies": {
+        "function_execution": 0.0009567737579345703
+    },
+    "metadata": 123,
+    "timestamps": {
+        "finishing_time": 1681651337.8029876,
+        "starting_time": 1681651337.8014925
+    }
+}
+{
+    "latencies": {
+        "function_execution": 0.002798318862915039
+    },
+    "metadata": 123,
+    "timestamps": {
+        "finishing_time": 1681651340.2990987,
+        "starting_time": 1681651340.2959433
+    }
+}
+{
+    "latencies": {
+        "function_execution": 0.13451552391052246
+    },
+    "metadata": 1,
+    "timestamps": {
+        "finishing_time": 1681651342.7283208,
+        "starting_time": 1681651342.5936387
+    }
+}
+{
+    "latencies": {
+        "download_data": 0.14568400382995605,
+        "function_execution": 41.15073227882385,
+        "upload_data": 0.3315882682800293
+    },
+    "metadata": "123",
+    "timestamps": {
+        "finishing_time": 1681651387.026029,
+        "starting_time": 1681651345.2429402
+    }
+}
+{
+    "latencies": {
+        "function_execution": 0.07612013816833496
+    },
+    "metadata": 1,
+    "timestamps": {
+        "finishing_time": 1681651389.640957,
+        "starting_time": 1681651389.5648348
+    }
+}
+{
+    "latencies": {
+        "function_execution": 0.00006246566772460938
+    },
+    "metadata": 123,
+    "timestamps": {
+        "finishing_time": 1681651392.027737,
+        "starting_time": 1681651392.027672
+    }
+}
+{
+    "latencies": {
+        "download_data": 0.07733726501464844,
+        "function_execution": 4.681969165802002,
+        "upload_data": 0.5367870330810547
+    },
+    "metadata": "123",
+    "timestamps": {
+        "finishing_time": 1681651400.0433419,
+        "starting_time": 1681651394.6376429
+    }
+}
+{
+    "latencies": {
+        "function_execution": 0.0007345676422119141
+    },
+    "metadata": 123,
+    "timestamps": {
+        "finishing_time": 1681651402.564115,
+        "starting_time": 1681651402.5629208
+    }
+}
+{
+    "latencies": {
+        "function_execution": 0.002623319625854492
+    },
+    "metadata": 123,
+    "timestamps": {
+        "finishing_time": 1681651404.960396,
+        "starting_time": 1681651404.957442
+    }
+}
+{
+    "latencies": {
+        "function_execution": 0.1316823959350586
+    },
+    "metadata": 1,
+    "timestamps": {
+        "finishing_time": 1681651407.4178295,
+        "starting_time": 1681651407.2859988
+    }
+}
+{
+    "latencies": {
+        "download_data": 0.14519476890563965,
+        "function_execution": 40.74101161956787,
+        "upload_data": 0.3465113639831543
+    },
+    "metadata": "123",
+    "timestamps": {
+        "finishing_time": 1681651451.2710867,
+        "starting_time": 1681651409.8890288
+    }
+}
+{
+    "latencies": {
+        "function_execution": 0.07770013809204102
+    },
+    "metadata": 1,
+    "timestamps": {
+        "finishing_time": 1681651453.840521,
+        "starting_time": 1681651453.762819
+    }
+}
+{
+    "latencies": {
+        "function_execution": 0.0002276897430419922
+    },
+    "metadata": 123,
+    "timestamps": {
+        "finishing_time": 1681651456.2984812,
+        "starting_time": 1681651456.298246
+    }
+}
+{
+    "latencies": {
+        "download_data": 0.06379342079162598,
+        "function_execution": 4.687684535980225,
+        "upload_data": 0.5214145183563232
+    },
+    "metadata": "123",
+    "timestamps": {
+        "finishing_time": 1681651464.3092518,
+        "starting_time": 1681651458.929202
+    }
+}
+{
+    "latencies": {
+        "function_execution": 0.0007090568542480469
+    },
+    "metadata": 123,
+    "timestamps": {
+        "finishing_time": 1681651466.967785,
+        "starting_time": 1681651466.966754
+    }
+}
+{
+    "latencies": {
+        "function_execution": 0.002624034881591797
+    },
+    "metadata": 123,
+    "timestamps": {
+        "finishing_time": 1681651469.5001006,
+        "starting_time": 1681651469.4967065
+    }
+}
+{
+    "latencies": {
+        "function_execution": 0.1453232765197754
+    },
+    "metadata": 1,
+    "timestamps": {
+        "finishing_time": 1681651472.0377853,
+        "starting_time": 1681651471.891952
+    }
+}
+{
+    "latencies": {
+        "download_data": 0.14563798904418945,
+        "function_execution": 41.70593047142029,
+        "upload_data": 0.3421359062194824
+    },
+    "metadata": "123",
+    "timestamps": {
+        "finishing_time": 1681651516.8771074,
+        "starting_time": 1681651474.5401406
+    }
+}
+{
+    "latencies": {
+        "function_execution": 0.07794737815856934
+    },
+    "metadata": 1,
+    "timestamps": {
+        "finishing_time": 1681651519.5339131,
+        "starting_time": 1681651519.4559636
+    }
+}
+{
+    "latencies": {
+        "function_execution": 0.00006198883056640625
+    },
+    "metadata": 123,
+    "timestamps": {
+        "finishing_time": 1681651522.0146947,
+        "starting_time": 1681651522.0146306
+    }
+}
+{
+    "latencies": {
+        "download_data": 0.06501364707946777,
+        "function_execution": 4.636179447174072,
+        "upload_data": 0.5080633163452148
+    },
+    "metadata": "123",
+    "timestamps": {
+        "finishing_time": 1681651529.8446686,
+        "starting_time": 1681651524.5458207
+    }
+}
+{
+    "latencies": {
+        "function_execution": 0.0006847381591796875
+    },
+    "metadata": 123,
+    "timestamps": {
+        "finishing_time": 1681651532.437367,
+        "starting_time": 1681651532.4364038
+    }
+}
+{
+    "latencies": {
+        "function_execution": 0.0028076171875
+    },
+    "metadata": 123,
+    "timestamps": {
+        "finishing_time": 1681651534.8661702,
+        "starting_time": 1681651534.8629694
+    }
+}
+{
+    "latencies": {
+        "function_execution": 0.17341208457946777
+    },
+    "metadata": 1,
+    "timestamps": {
+        "finishing_time": 1681651537.4808276,
+        "starting_time": 1681651537.307263
+    }
+}
+{
+    "latencies": {
+        "download_data": 0.14510512351989746,
+        "function_execution": 41.242318630218506,
+        "upload_data": 0.3306560516357422
+    },
+    "metadata": "123",
+    "timestamps": {
+        "finishing_time": 1681651581.8731742,
+        "starting_time": 1681651540.003168
+    }
+}
+{
+    "latencies": {
+        "function_execution": 0.08123135566711426
+    },
+    "metadata": 1,
+    "timestamps": {
+        "finishing_time": 1681651584.454019,
+        "starting_time": 1681651584.3727856
+    }
+}
+{
+    "latencies": {
+        "function_execution": 0.00019359588623046875
+    },
+    "metadata": 123,
+    "timestamps": {
+        "finishing_time": 1681651586.986302,
+        "starting_time": 1681651586.9861052
+    }
+}
+{
+    "latencies": {
+        "download_data": 0.06475424766540527,
+        "function_execution": 4.5691916942596436,
+        "upload_data": 0.5093183517456055
+    },
+    "metadata": "123",
+    "timestamps": {
+        "finishing_time": 1681651594.7402906,
+        "starting_time": 1681651589.5091689
+    }
+}
+{
+    "latencies": {
+        "function_execution": 0.0018115043640136719
+    },
+    "metadata": 123,
+    "timestamps": {
+        "finishing_time": 1681651597.255979,
+        "starting_time": 1681651597.2534652
+    }
+}
+{
+    "latencies": {
+        "function_execution": 0.0025391578674316406
+    },
+    "metadata": 123,
+    "timestamps": {
+        "finishing_time": 1681651599.6744854,
+        "starting_time": 1681651599.671615
+    }
+}
+{
+    "latencies": {
+        "function_execution": 0.14826369285583496
+    },
+    "metadata": 1,
+    "timestamps": {
+        "finishing_time": 1681651602.2293043,
+        "starting_time": 1681651602.080532
+    }
+}
+{
+    "latencies": {
+        "download_data": 0.14502930641174316,
+        "function_execution": 41.205530881881714,
+        "upload_data": 0.3247847557067871
+    },
+    "metadata": "123",
+    "timestamps": {
+        "finishing_time": 1681651646.7066228,
+        "starting_time": 1681651604.8702343
+    }
+}
+{
+    "latencies": {
+        "function_execution": 0.08045029640197754
+    },
+    "metadata": 1,
+    "timestamps": {
+        "finishing_time": 1681651649.4371157,
+        "starting_time": 1681651649.356663
+    }
+}
+{
+    "latencies": {
+        "function_execution": 0.00005555152893066406
+    },
+    "metadata": 123,
+    "timestamps": {
+        "finishing_time": 1681651651.8087852,
+        "starting_time": 1681651651.8087273
+    }
+}
+{
+    "latencies": {
+        "download_data": 0.06143379211425781,
+        "function_execution": 4.6530468463897705,
+        "upload_data": 0.5177133083343506
+    },
+    "metadata": "123",
+    "timestamps": {
+        "finishing_time": 1681651659.6042826,
+        "starting_time": 1681651654.286363
+    }
+}
+{
+    "latencies": {
+        "function_execution": 0.0007450580596923828
+    },
+    "metadata": 123,
+    "timestamps": {
+        "finishing_time": 1681651663.6230154,
+        "starting_time": 1681651663.6219623
+    }
+}
+{
+    "latencies": {
+        "function_execution": 0.002829313278198242
+    },
+    "metadata": 123,
+    "timestamps": {
+        "finishing_time": 1681651666.027563,
+        "starting_time": 1681651666.0243626
+    }
+}
+{
+    "latencies": {
+        "function_execution": 0.13451886177062988
+    },
+    "metadata": 1,
+    "timestamps": {
+        "finishing_time": 1681651668.5674012,
+        "starting_time": 1681651668.432739
+    }
+}
+{
+    "latencies": {
+        "download_data": 0.1449894905090332,
+        "function_execution": 40.85220456123352,
+        "upload_data": 0.320037841796875
+    },
+    "metadata": "123",
+    "timestamps": {
+        "finishing_time": 1681651712.5820212,
+        "starting_time": 1681651671.0984828
+    }
+}
+{
+    "latencies": {
+        "function_execution": 0.07984280586242676
+    },
+    "metadata": 1,
+    "timestamps": {
+        "finishing_time": 1681651715.201667,
+        "starting_time": 1681651715.1218216
+    }
+}
+{
+    "latencies": {
+        "function_execution": 0.00006127357482910156
+    },
+    "metadata": 123,
+    "timestamps": {
+        "finishing_time": 1681651717.4786756,
+        "starting_time": 1681651717.478612
+    }
+}
+{
+    "latencies": {
+        "download_data": 0.0652608871459961,
+        "function_execution": 4.658944129943848,
+        "upload_data": 0.5543608665466309
+    },
+    "metadata": "123",
+    "timestamps": {
+        "finishing_time": 1681651725.3317955,
+        "starting_time": 1681651719.966716
+    }
+}
+{
+    "latencies": {
+        "function_execution": 0.0007054805755615234
+    },
+    "metadata": 123,
+    "timestamps": {
+        "finishing_time": 1681651727.8638864,
+        "starting_time": 1681651727.862865
+    }
+}
+{
+    "latencies": {
+        "function_execution": 0.0026009082794189453
+    },
+    "metadata": 123,
+    "timestamps": {
+        "finishing_time": 1681651730.2508278,
+        "starting_time": 1681651730.2478495
+    }
+}
+{
+    "latencies": {
+        "function_execution": 0.13361310958862305
+    },
+    "metadata": 1,
+    "timestamps": {
+        "finishing_time": 1681651732.691685,
+        "starting_time": 1681651732.557694
+    }
+}
+{
+    "latencies": {
+        "download_data": 0.1499769687652588,
+        "function_execution": 40.99147844314575,
+        "upload_data": 0.3006706237792969
+    },
+    "metadata": "123",
+    "timestamps": {
+        "finishing_time": 1681651776.8016179,
+        "starting_time": 1681651735.2141085
+    }
+}
+{
+    "latencies": {
+        "function_execution": 0.07894086837768555
+    },
+    "metadata": 1,
+    "timestamps": {
+        "finishing_time": 1681651779.5410423,
+        "starting_time": 1681651779.4621
+    }
+}
+{
+    "latencies": {
+        "function_execution": 0.00006318092346191406
+    },
+    "metadata": 123,
+    "timestamps": {
+        "finishing_time": 1681651782.027211,
+        "starting_time": 1681651782.0271454
+    }
+}
+{
+    "latencies": {
+        "download_data": 0.06000781059265137,
+        "function_execution": 4.594376564025879,
+        "upload_data": 0.4778475761413574
+    },
+    "metadata": "123",
+    "timestamps": {
+        "finishing_time": 1681651789.7946982,
+        "starting_time": 1681651784.559172
+    }
+}
+{
+    "latencies": {
+        "function_execution": 0.0006804466247558594
+    },
+    "metadata": 123,
+    "timestamps": {
+        "finishing_time": 1681651792.2191727,
+        "starting_time": 1681651792.2181628
+    }
+}
+{
+    "latencies": {
+        "function_execution": 0.0028188228607177734
+    },
+    "metadata": 123,
+    "timestamps": {
+        "finishing_time": 1681651794.780205,
+        "starting_time": 1681651794.7770169
+    }
+}
+{
+    "latencies": {
+        "function_execution": 0.12891626358032227
+    },
+    "metadata": 1,
+    "timestamps": {
+        "finishing_time": 1681651797.2071319,
+        "starting_time": 1681651797.078075
+    }
+}
+{
+    "latencies": {
+        "download_data": 0.14856982231140137,
+        "function_execution": 42.2502715587616,
+        "upload_data": 0.2869389057159424
+    },
+    "metadata": "123",
+    "timestamps": {
+        "finishing_time": 1681651842.5767002,
+        "starting_time": 1681651799.7527158
+    }
+}
+{
+    "latencies": {
+        "function_execution": 0.07724690437316895
+    },
+    "metadata": 1,
+    "timestamps": {
+        "finishing_time": 1681651845.1993048,
+        "starting_time": 1681651845.1220555
+    }
+}
+{
+    "latencies": {
+        "function_execution": 0.00006103515625
+    },
+    "metadata": 123,
+    "timestamps": {
+        "finishing_time": 1681651847.5181186,
+        "starting_time": 1681651847.5180554
+    }
+}
+{
+    "latencies": {
+        "download_data": 0.06306648254394531,
+        "function_execution": 4.6302831172943115,
+        "upload_data": 0.5168216228485107
+    },
+    "metadata": "123",
+    "timestamps": {
+        "finishing_time": 1681651855.3610759,
+        "starting_time": 1681651850.025467
+    }
+}
+{
+    "latencies": {
+        "function_execution": 0.0006825923919677734
+    },
+    "metadata": 123,
+    "timestamps": {
+        "finishing_time": 1681651857.818229,
+        "starting_time": 1681651857.817127
+    }
+}
+{
+    "latencies": {
+        "function_execution": 0.002592325210571289
+    },
+    "metadata": 123,
+    "timestamps": {
+        "finishing_time": 1681651860.2180257,
+        "starting_time": 1681651860.2150233
+    }
+}
+{
+    "latencies": {
+        "function_execution": 0.14646577835083008
+    },
+    "metadata": 1,
+    "timestamps": {
+        "finishing_time": 1681651862.6440444,
+        "starting_time": 1681651862.4970617
+    }
+}
+{
+    "latencies": {
+        "download_data": 0.14812994003295898,
+        "function_execution": 41.51342010498047,
+        "upload_data": 0.32167887687683105
+    },
+    "metadata": "123",
+    "timestamps": {
+        "finishing_time": 1681651907.3528912,
+        "starting_time": 1681651865.228047
+    }
+}
+{
+    "latencies": {
+        "function_execution": 0.07973527908325195
+    },
+    "metadata": 1,
+    "timestamps": {
+        "finishing_time": 1681651909.9331934,
+        "starting_time": 1681651909.853456
+    }
+}
+{
+    "latencies": {
+        "function_execution": 0.00006079673767089844
+    },
+    "metadata": 123,
+    "timestamps": {
+        "finishing_time": 1681651912.2826617,
+        "starting_time": 1681651912.2825987
+    }
+}
+{
+    "latencies": {
+        "download_data": 0.061515092849731445,
+        "function_execution": 4.747580528259277,
+        "upload_data": 0.5215938091278076
+    },
+    "metadata": "123",
+    "timestamps": {
+        "finishing_time": 1681651920.4174342,
+        "starting_time": 1681651914.978817
+    }
+}
+{
+    "latencies": {
+        "function_execution": 0.0006554126739501953
+    },
+    "metadata": 123,
+    "timestamps": {
+        "finishing_time": 1681651922.872383,
+        "starting_time": 1681651922.871435
+    }
+}
+{
+    "latencies": {
+        "function_execution": 0.002550363540649414
+    },
+    "metadata": 123,
+    "timestamps": {
+        "finishing_time": 1681651925.358131,
+        "starting_time": 1681651925.3552167
+    }
+}
+{
+    "latencies": {
+        "function_execution": 0.1327967643737793
+    },
+    "metadata": 1,
+    "timestamps": {
+        "finishing_time": 1681651927.7799664,
+        "starting_time": 1681651927.647012
+    }
+}
+{
+    "latencies": {
+        "download_data": 0.1452012062072754,
+        "function_execution": 41.15951752662659,
+        "upload_data": 0.3138108253479004
+    },
+    "metadata": "123",
+    "timestamps": {
+        "finishing_time": 1681651972.1099064,
+        "starting_time": 1681651930.327656
+    }
+}
+{
+    "latencies": {
+        "function_execution": 0.08399820327758789
+    },
+    "metadata": 1,
+    "timestamps": {
+        "finishing_time": 1681651974.821713,
+        "starting_time": 1681651974.7377124
+    }
+}
+{
+    "latencies": {
+        "function_execution": 0.000057220458984375
+    },
+    "metadata": 123,
+    "timestamps": {
+        "finishing_time": 1681651977.2748258,
+        "starting_time": 1681651977.274766
+    }
+}
+{
+    "latencies": {
+        "download_data": 0.06113910675048828,
+        "function_execution": 4.6413304805755615,
+        "upload_data": 0.5377471446990967
+    },
+    "metadata": "123",
+    "timestamps": {
+        "finishing_time": 1681651985.0204058,
+        "starting_time": 1681651979.6911995
+    }
+}
+{
+    "latencies": {
+        "function_execution": 0.0006844997406005859
+    },
+    "metadata": 123,
+    "timestamps": {
+        "finishing_time": 1681651987.5356867,
+        "starting_time": 1681651987.5346816
+    }
+}
+{
+    "latencies": {
+        "function_execution": 0.0026683807373046875
+    },
+    "metadata": 123,
+    "timestamps": {
+        "finishing_time": 1681651990.0639884,
+        "starting_time": 1681651990.060989
+    }
+}
+{
+    "latencies": {
+        "function_execution": 0.1330888271331787
+    },
+    "metadata": 1,
+    "timestamps": {
+        "finishing_time": 1681651992.587172,
+        "starting_time": 1681651992.453915
+    }
+}
+{
+    "latencies": {
+        "download_data": 0.14503717422485352,
+        "function_execution": 40.64281105995178,
+        "upload_data": 0.35832667350769043
+    },
+    "metadata": "123",
+    "timestamps": {
+        "finishing_time": 1681652036.4156628,
+        "starting_time": 1681651995.0972972
+    }
+}
+{
+    "latencies": {
+        "function_execution": 0.07780838012695312
+    },
+    "metadata": 1,
+    "timestamps": {
+        "finishing_time": 1681652039.1146214,
+        "starting_time": 1681652039.0368104
+    }
+}
+{
+    "latencies": {
+        "function_execution": 0.00006413459777832031
+    },
+    "metadata": 123,
+    "timestamps": {
+        "finishing_time": 1681652041.5304809,
+        "starting_time": 1681652041.5304146
+    }
+}
+{
+    "latencies": {
+        "download_data": 0.0628509521484375,
+        "function_execution": 4.539304494857788,
+        "upload_data": 0.5101747512817383
+    },
+    "metadata": "123",
+    "timestamps": {
+        "finishing_time": 1681652049.29226,
+        "starting_time": 1681652044.0954301
+    }
+}
+{
+    "latencies": {
+        "function_execution": 0.0007741451263427734
+    },
+    "metadata": 123,
+    "timestamps": {
+        "finishing_time": 1681652051.7381227,
+        "starting_time": 1681652051.7369387
+    }
+}
+{
+    "latencies": {
+        "function_execution": 0.0027816295623779297
+    },
+    "metadata": 123,
+    "timestamps": {
+        "finishing_time": 1681652054.2186265,
+        "starting_time": 1681652054.2154663
+    }
+}
+{
+    "latencies": {
+        "function_execution": 0.13028621673583984
+    },
+    "metadata": 1,
+    "timestamps": {
+        "finishing_time": 1681652056.7666638,
+        "starting_time": 1681652056.6362274
+    }
+}
+{
+    "latencies": {
+        "download_data": 0.14850902557373047,
+        "function_execution": 40.89538550376892,
+        "upload_data": 0.3390772342681885
+    },
+    "metadata": "123",
+    "timestamps": {
+        "finishing_time": 1681652100.9827366,
+        "starting_time": 1681652059.4511817
+    }
+}
+{
+    "latencies": {
+        "function_execution": 0.08613944053649902
+    },
+    "metadata": 1,
+    "timestamps": {
+        "finishing_time": 1681652103.7907476,
+        "starting_time": 1681652103.7046053
+    }
+}
+{
+    "latencies": {
+        "function_execution": 0.00006890296936035156
+    },
+    "metadata": 123,
+    "timestamps": {
+        "finishing_time": 1681652106.2159119,
+        "starting_time": 1681652106.2158406
+    }
+}
+{
+    "latencies": {
+        "download_data": 0.060300588607788086,
+        "function_execution": 4.6290366649627686,
+        "upload_data": 0.5302560329437256
+    },
+    "metadata": "123",
+    "timestamps": {
+        "finishing_time": 1681652114.0768626,
+        "starting_time": 1681652108.764933
+    }
+}
+{
+    "latencies": {
+        "function_execution": 0.0007090568542480469
+    },
+    "metadata": 123,
+    "timestamps": {
+        "finishing_time": 1681652116.5215614,
+        "starting_time": 1681652116.5204613
+    }
+}
+{
+    "latencies": {
+        "function_execution": 0.0027103424072265625
+    },
+    "metadata": 123,
+    "timestamps": {
+        "finishing_time": 1681652119.1995306,
+        "starting_time": 1681652119.1964724
+    }
+}
+{
+    "latencies": {
+        "function_execution": 0.1430659294128418
+    },
+    "metadata": 1,
+    "timestamps": {
+        "finishing_time": 1681652121.770132,
+        "starting_time": 1681652121.626569
+    }
+}
+{
+    "latencies": {
+        "download_data": 0.14902186393737793,
+        "function_execution": 41.11810851097107,
+        "upload_data": 0.33910655975341797
+    },
+    "metadata": "123",
+    "timestamps": {
+        "finishing_time": 1681652165.9920797,
+        "starting_time": 1681652124.2235522
+    }
+}
+{
+    "latencies": {
+        "function_execution": 0.07686305046081543
+    },
+    "metadata": 1,
+    "timestamps": {
+        "finishing_time": 1681652168.5885143,
+        "starting_time": 1681652168.5116494
+    }
+}
+{
+    "latencies": {
+        "function_execution": 0.000054836273193359375
+    },
+    "metadata": 123,
+    "timestamps": {
+        "finishing_time": 1681652170.9385903,
+        "starting_time": 1681652170.9385326
+    }
+}
+{
+    "latencies": {
+        "download_data": 0.059735774993896484,
+        "function_execution": 4.613325595855713,
+        "upload_data": 0.5061006546020508
+    },
+    "metadata": "123",
+    "timestamps": {
+        "finishing_time": 1681652178.7189853,
+        "starting_time": 1681652173.4539921
+    }
+}
+{
+    "latencies": {
+        "function_execution": 0.0007212162017822266
+    },
+    "metadata": 123,
+    "timestamps": {
+        "finishing_time": 1681652181.1481826,
+        "starting_time": 1681652181.1471367
+    }
+}
+{
+    "latencies": {
+        "function_execution": 0.0027027130126953125
+    },
+    "metadata": 123,
+    "timestamps": {
+        "finishing_time": 1681652183.596195,
+        "starting_time": 1681652183.5931323
+    }
+}
+{
+    "latencies": {
+        "function_execution": 0.14091062545776367
+    },
+    "metadata": 1,
+    "timestamps": {
+        "finishing_time": 1681652186.0166314,
+        "starting_time": 1681652185.8753462
+    }
+}
+{
+    "latencies": {
+        "download_data": 0.14594674110412598,
+        "function_execution": 40.99662756919861,
+        "upload_data": 0.30495214462280273
+    },
+    "metadata": "123",
+    "timestamps": {
+        "finishing_time": 1681652230.1484919,
+        "starting_time": 1681652188.5593505
+    }
+}

@@ -79,7 +79,7 @@ def main(event):
     latencies["download_data"] = download_data
 
     function_execution, upload_path = video_processing(object_key, download_path, model_path)
-    latencies["function_execution"] = download_data
+    latencies["function_execution"] = function_execution
 
     start = time()
     s3_client.upload_file(upload_path, output_bucket, upload_path.split("/")[FILE_PATH_INDEX])
@@ -88,3 +88,4 @@ def main(event):
     timestamps["finishing_time"] = time()
 
     return {"latencies": latencies, "timestamps": timestamps, "metadata": metadata}
+

@@ -1,0 +1,1 @@
+{"endpoint_url":"", "object_key":"image.jpg", "input_bucket":"test", "output_bucket":"test-out", "aws_access_key_id":"minioadmin", "aws_secret_access_key":"minioadmin", "metadata":"123"}
