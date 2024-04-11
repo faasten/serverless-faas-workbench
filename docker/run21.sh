@@ -19,7 +19,7 @@ mc cp $BENCHDATA/video/SampleVideo_1280x720_10mb.mp4 minio-test/test 1>&2
 mc cp $BENCHDATA/model/haarcascade_frontalface_default.xml minio-test/test 1>&2
 mc cp $BENCHDATA/amzn_fine_food_reviews/reviews100mb.csv minio-test/test 1>&2
 
-jsons=(chameleon.json float_operation.json image_processing.json linpack.json matmul.json ml_video_face_detection model_training pyaes.json video_processing.json)
+jsons=(chameleon.json float_operation.json image_processing.json linpack.json matmul.json ml_video_face_detection.json model_training.json pyaes.json video_processing.json)
 
 RUNS=21
 
