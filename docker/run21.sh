@@ -27,5 +27,5 @@ for json in "${jsons[@]}"; do
     filename=$(basename -- "$json")
     action="${filename%.*}"
     echo $action 1>&2
-    docker run --rm py3:$action "$(yes $(jq '.endpoint_url="'$MINIO'"' jsons/$filename) | head -n $RUNS | jq -s)"
+    docker run --memory="2048m" --rm py3:$action "$(yes $(jq '.endpoint_url="'$MINIO'"' jsons/$filename) | head -n $RUNS | jq -s)"
 done
