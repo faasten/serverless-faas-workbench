@@ -20,7 +20,7 @@ def image_processing(file_name, image_path):
         path_list += ops.resize(image, file_name)
 
     latency = time() - start
-    print("PATH_LIST", path_list)
+    # print("PATH_LIST", path_list)
     return latency, path_list
 
 
@@ -51,7 +51,7 @@ def main(event):
 
     image_processing_latency, path_list = image_processing(object_key, download_path)
     latencies["function_execution"] = image_processing_latency
-    print("PATH_LIST OUTSIDE", path_list)
+    # print("PATH_LIST OUTSIDE", path_list)
 
     start = time()
     for upload_path in path_list:
