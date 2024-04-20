@@ -18,6 +18,8 @@ RUNS = 21
 
 with open(file) as f:
     lines = f.readlines()
+    print(len(lines), len(lines)/len(names))
+
     assert len(lines) / len(names) == RUNS
 
     grouped = [
@@ -27,7 +29,8 @@ with open(file) as f:
 
     grouped_times = [
         [
-            float(json.loads(l)["timestamps"]["finishing_time"]) - float(json.loads(l)["timestamps"]["starting_time"])
+            float(json.loads(l)["timestamps"]["finishing_time"])
+            - float(json.loads(l)["timestamps"]["starting_time"])
             for l in ls
         ]
         for ls in grouped

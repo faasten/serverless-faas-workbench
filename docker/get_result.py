@@ -27,29 +27,29 @@ names_noml = [
 
 RUNS = 21
 
-def process(file, names):
+def get_result(file, names):
     with open(file) as f:
-        jsons = json.load(f)
-        assert len(jsons) % RUNS == 0
-        n = len(jsons) // RUNS
+        lines = f.readlines()
+        assert len(lines) / len(names) == RUNS
 
         grouped = [
-            jsons[i:len(jsons):n] if RUNS == 1 else jsons[i:len(jsons):n][1:]
-            for i in range(n)
+            lines[i:i+RUNS] if RUNS == 1 else lines[i:i+RUNS][1:]
+            for i in range(0, len(lines), RUNS)
         ]
 
         grouped_times = [
             [
-                j['timestamps']['finishing_time'] - j['timestamps']['starting_time']
-                for j in g
+                float(json.loads(l)["timestamps"]["finishing_time"])
+                - float(json.loads(l)["timestamps"]["starting_time"])
+                for l in ls
             ]
-            for g in grouped
+            for ls in grouped
         ]
 
-        avgs = [
-            sum(times) / len(times)
-            for times in grouped_times
-        ]
+        # avgs = [
+        #     sum(times) / len(times)
+        #     for times in grouped_times
+        # ]
 
         for n, ts in zip(names, grouped_times):
             avg = sum(ts) / len(ts)
@@ -60,11 +60,9 @@ if __name__ == "__main__":
     type = sys.argv[1]
     file = sys.argv[2]
     if type == "all":
-        process(file, names)
+        get_result(file, names)
     elif type == "noml":
-        process(file, names_noml)
+        get_result(file, names_noml)
     else:
-        print("Usage: type file.jsons")
-
-
+        get_result(file, [type])
 

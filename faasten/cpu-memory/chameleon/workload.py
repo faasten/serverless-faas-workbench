@@ -1,4 +1,4 @@
-from time import time
+from time import time, perf_counter
 import json
 from chameleon import PageTemplate
 
@@ -20,25 +20,25 @@ tal:content="python: d" />
 def main(event):
     latencies = {}
     timestamps = {}
-    timestamps["starting_time"] = time()
+    timestamps["starting_time"] = perf_counter()
     num_of_rows = event['num_of_rows']
     num_of_cols = event['num_of_cols']
     metadata = event['metadata']
 
-    start = time()
-    tmpl = PageTemplate(BIGTABLE_ZPT)
+    start = perf_counter()
+    # tmpl = PageTemplate(BIGTABLE_ZPT)
 
-    data = {}
-    for i in range(num_of_cols):
-        data[str(i)] = i
+    # data = {}
+    # for i in range(num_of_cols):
+    #     data[str(i)] = i
 
-    table = [data for x in range(num_of_rows)]
-    options = {'table': table}
+    # table = [data for x in range(num_of_rows)]
+    # options = {'table': table}
 
-    data = tmpl.render(options=options)
-    latency = time() - start
+    # data = tmpl.render(options=options)
+    latency = perf_counter() - start
     latencies["function_execution"] = latency
-    timestamps["finishing_time"] = time()
+    timestamps["finishing_time"] = perf_counter()
 
     return ResponseDict({"latencies": latencies, "timestamps": timestamps, "metadata": metadata})
 
